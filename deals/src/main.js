@@ -5,18 +5,13 @@ import App from './App'
 import router from './router'
 
 import VueResource from 'vue-resource'
-import BootstrapVue from 'bootstrap-vue';
 import lazysizes from 'lazysizes'
-
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.config.productionTip = false
 Vue.use(VueResource);
-Vue.use(BootstrapVue);
 Vue.use(lazysizes);
  
-// Vue.http.headers.common['Access-Control-Allow-Origin'] = 'http://192.168.1.100:5000'
+require('font-awesome/css/font-awesome.css');
 
 /* eslint-disable no-new */
 new Vue({

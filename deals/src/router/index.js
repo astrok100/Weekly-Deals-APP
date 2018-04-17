@@ -10,6 +10,16 @@ export default new Router({
       path: '/',
       name: 'Offers',
       component: Offers
-    }
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: Offers
+    },
+	{
+      path: '/terms',
+      name: 'Terms & Conditions',
+      component: Offers
+    },
   ]
 })

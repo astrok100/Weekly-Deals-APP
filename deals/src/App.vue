@@ -1,18 +1,17 @@
 <template>
-  <div id="Deals">
-    <div class="container">
-      <div class="row row-offcanvas row-offcanvas-right">
-        <router-view></router-view>
-      </div>
-    </div>
-  </div>
+	<div id="Deals">
+			<nav-bar :routeMap="routeMap"></nav-bar>
+			<router-view></router-view>
+	</div>
 </template>
 
 
 <script>
-export default {
-  name: 'app'
-}
+	import NavBar from '@/components/NavBar'
+	export default {
+		name: 'app',
+		components: {'nav-bar': NavBar}
+	}
 </script>
 
 <style>
